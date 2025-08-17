@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+body {
+  overflow-x: hidden;
+  font-family: "Segoe UI Symbol", ui-sans-serif, system-ui, sans-serif;
+}
