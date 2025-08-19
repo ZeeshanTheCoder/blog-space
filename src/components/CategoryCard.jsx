@@ -27,22 +27,22 @@ const CategoryCard = ({
       </div>
 
       {/* Title */}
-      <h3 className="text-2xl font-medium text-[#2E5A2E] mt-6 mb-4">{title}</h3>
+      <h3 className="text-2xl font-medium text-primary mt-6 mb-4">{title}</h3>
       <p className="font-normal text-[#4B5563] pb-7">
         {description}
       </p>
 
       {/* Bottom Row */}
       <div className="flex items-center justify-between text-sm text-gray-600 mt-auto">
-        <div className="flex space-x-4 text-[#2E5A2E] font-normal">
-          <p className="text-[#2E5A2E]">
+        <div className="flex space-x-4 text-primary font-normal">
+          <p className="text-primary">
             {posts} <span className="text-[#6B7280]">posts</span>
           </p>
-          <p className="text-[#2E5A2E]">
+          <p className="text-primary">
             {followers} <span className="text-[#6B7280]">followers</span>
           </p>
         </div>
-        <button className="bg-[#2E5A2E] text-white px-4 py-1.5 cursor-pointer rounded-md hover:bg-green-800 transition">
+        <button className="bg-primary text-white px-4 py-1.5 cursor-pointer rounded-md hover:bg-green-800 transition">
           Follow
         </button>
       </div>

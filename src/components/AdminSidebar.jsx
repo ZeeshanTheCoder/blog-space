@@ -28,7 +28,7 @@ const AdminSidebar = ({ isOpen, closeSidebar }) => {
   return (
     <aside
       className={`
-        fixed top-0 left-0 w-64 h-screen bg-[#2E5A2E] text-white z-50
+        fixed top-0 left-0 w-64 h-screen bg-primary text-white z-50
         transform transition-transform duration-300
         ${isOpen ? "translate-x-0" : "-translate-x-full"} 
         lg:translate-x-0 lg:static lg:flex
@@ -49,8 +49,8 @@ const AdminSidebar = ({ isOpen, closeSidebar }) => {
                 className={`flex items-center gap-3 px-4 py-2 rounded-md cursor-pointer 
                   ${
                     item.active
-                      ? "bg-[#98CF98] text-[#2E5A2E]"
-                      : "hover:bg-[#98CF98] text-[white]"
+                      ? "bg-secondary text-primary"
+                      : "hover:bg-secondary text-[white]"
                   }`}
               >
                 <img src={item.icon} alt="" />
@@ -61,7 +61,7 @@ const AdminSidebar = ({ isOpen, closeSidebar }) => {
         </div>
 
         <div className="py-2">
-          <button className="flex items-center gap-3 px-4 py-2 rounded-md cursor-pointer hover:bg-[#98CF98] text-[white]">
+          <button className="flex items-center gap-3 px-4 py-2 rounded-md cursor-pointer hover:bg-secondary text-[white]">
             <img src="/assets/icons/logout-vector.png" alt="" />{" "}
             <span>Logout</span>
           </button>

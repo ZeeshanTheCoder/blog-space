@@ -13,7 +13,7 @@ const HeroSection = () => {
       ></div>
 
       {/* Dark Green Overlay */}
-      <div className="absolute inset-0 bg-[#2E5A2E] opacity-70"></div>
+      <div className="absolute inset-0 bg-primary opacity-70"></div>
 
       {/* Content */}
       <div className="relative z-10 h-full flex items-center">
@@ -26,7 +26,7 @@ const HeroSection = () => {
                 publish, and discover amazing content that inspires and informs.
               </p>
               <div className="flex flex-row gap-4">
-                <button className="bg-[#98CF98] hover:bg-green-800 text-black px-6 py-2 rounded-md text-sm">
+                <button className="bg-secondary hover:bg-green-800 text-black px-6 py-2 rounded-md text-sm">
                   Start Writing
                 </button>
                 <button className="border border-white text-white bg-transparent hover:bg-green-50 px-6 py-2 rounded-md text-sm">

@@ -19,7 +19,7 @@ const AuthorContent = () => {
       <aside className="w-full md:w-64 bg-white p-4 border-r">
         {/* Quick Stats */}
         <div>
-          <h2 className="text-[#2E5A2E] font-medium text-lg mb-4">
+          <h2 className="text-primary font-medium text-lg mb-4">
             Quick Stats
           </h2>
           <div className="space-y-3">
@@ -54,7 +54,7 @@ const AuthorContent = () => {
                 className="flex items-center justify-between p-3 bg-[#F9FAFB] rounded-lg"
               >
                 <div className="flex flex-col">
-                  <span className="text-[#2E5A2E] text-2xl font-medium">
+                  <span className="text-primary text-2xl font-medium">
                     {item.count}
                   </span>
                   <span className="text-[#4B5563] text-xs">{item.label}</span>
@@ -74,7 +74,7 @@ const AuthorContent = () => {
 
         {/* Quick Actions */}
         <div className="mt-8">
-          <h2 className="text-[#2E5A2E] font-medium text-lg mb-4">
+          <h2 className="text-primary font-medium text-lg mb-4">
             Quick Actions
           </h2>
           <div className="space-y-2">
@@ -87,7 +87,7 @@ const AuthorContent = () => {
                 key={i}
                 className="w-full flex items-center gap-3 text-sm bg-[#F7FBF7] hover:bg-gray-100 transition p-2 rounded"
               >
-                <div className="flex items-center justify-center w-8 h-8 bg-[#98CF98] rounded-full">
+                <div className="flex items-center justify-center w-8 h-8 bg-secondary rounded-full">
                   <img
                     src={action.icon}
                     alt=""
@@ -102,11 +102,11 @@ const AuthorContent = () => {
 
         {/* Filter Posts */}
         <div className="mt-8">
-          <h2 className="text-[#2E5A2E] font-medium text-lg mb-4">
+          <h2 className="text-primary font-medium text-lg mb-4">
             Filter Posts
           </h2>
           <div className="space-y-2">
-            <button className="w-full text-left text-sm text-[#98CF98] hover:text-green-600 transition p-2 rounded">
+            <button className="w-full text-left text-sm text-secondary hover:text-green-600 transition p-2 rounded">
               All Posts
             </button>
             <button className="w-full text-left text-sm text-[#4B5563] hover:text-green-600 transition p-2 rounded">
@@ -126,7 +126,7 @@ const AuthorContent = () => {
         {/* Top Header */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
           <div>
-            <h1 className="text-2xl font-medium text-[#2E5A2E]">Blog Posts</h1>
+            <h1 className="text-2xl font-medium text-primary">Blog Posts</h1>
             <p className="text-sm text-[#4B5563]">
               Manage your blog content and publications
             </p>
@@ -136,7 +136,7 @@ const AuthorContent = () => {
               <input
                 type="text"
                 placeholder="Search posts..."
-                className="pl-10 pr-4 py-2 rounded-lg border border-[#D1D5DB] text-sm focus:outline-none focus:ring-2 focus:ring-[#98CF98]"
+                className="pl-10 pr-4 py-2 rounded-lg border border-[#D1D5DB] text-sm focus:outline-none focus:ring-2 focus:ring-secondary"
               />
               <FaSearch className="absolute left-3 top-2.5 text-gray-400" />
             </div>
@@ -158,7 +158,7 @@ const AuthorContent = () => {
           {/* Content */}
           <div className="flex-1 space-y-1">
             <div className="flex items-center gap-15">
-              <h2 className="text-[#2E5A2E] font-medium text-lg">
+              <h2 className="text-primary font-medium text-lg">
                 The Art of Storytelling: Crafting Compelling Narratives
               </h2>
               <span className="text-xs bg-[#10B981] text-white px-3 py-1 rounded-full">

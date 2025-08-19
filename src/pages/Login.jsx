@@ -52,13 +52,13 @@ const Login = () => {
               <input type="checkbox" className="mr-2" />
               Remember me
             </label>
-            <a href="#" className="text-[#98CF98] hover:underline">
+            <a href="#" className="text-secondary hover:underline">
               Forgot Password?
             </a>
           </div>
 
           {/* Sign In Button */}
-          <button className="w-full bg-[#2E5A2E] text-white py-2 rounded-md hover:bg-green-800 transition">
+          <button className="w-full bg-primary text-white py-2 rounded-md hover:bg-green-800 transition">
             Sign In
           </button>
 
@@ -84,7 +84,7 @@ const Login = () => {
           {/* Create Account Link */}
           <p className="text-center text-[#4B5563] text-sm">
             Don’t have an account?{" "}
-            <a href="#" className="text-[#98CF98] hover:underline">
+            <a href="#" className="text-secondary hover:underline">
               Create Account
             </a>
           </p>

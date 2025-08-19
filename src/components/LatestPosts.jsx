@@ -33,7 +33,7 @@ const LatestPosts = () => {
     <section className="bg-[#E6F4EC] min-h-screen py-10 px-4 sm:px-6 lg:px-20">
       {/* Heading */}
       <div className="max-w-5xl mx-auto mb-8">
-        <h2 className="text-3xl font-medium text-[#2E5A2E] mb-2">
+        <h2 className="text-3xl font-medium text-primary mb-2">
           Latest Posts
         </h2>
         <p className="text-[#374151] text-base">
@@ -51,13 +51,13 @@ const LatestPosts = () => {
             className="w-full rounded-t-lg object-cover h-[auto]"
           />
           <div className="p-6">
-            <span className="inline-block bg-[#98CF98] text-[#2E5A2E] text-xs px-3 py-1 rounded-full mb-3">
+            <span className="inline-block bg-secondary text-primary text-xs px-3 py-1 rounded-full mb-3">
               Writing
             </span>
             <span className="inline-block text-[#6B7280] text-xs px-3 py-1 rounded-full mb-3">
               March 9,
             </span>
-            <h3 className="text-xl text-[#2E5A2E] font-medium mb-2">
+            <h3 className="text-xl text-primary font-medium mb-2">
               The Art of Storytelling: Crafting Compelling Narratives
             </h3>
             <p className="text-[#374151] text-sm mb-6 leading-relaxed line-clamp-2">
@@ -68,11 +68,11 @@ const LatestPosts = () => {
             <div className="flex items-center justify-between">
               {/* Author Info */}
               <div className="flex items-center space-x-3">
-                <div className="rounded-full bg-[#98CF98] p-3">
+                <div className="rounded-full bg-secondary p-3">
                   <img src={authors[1].avatar} alt={authors[1].name} />
                 </div>
                 <div>
-                  <p className="text-[#2E5A2E] text-sm">{authors[1].name}</p>
+                  <p className="text-primary text-sm">{authors[1].name}</p>
                   <p className="text-[#4B5563] text-xs">
                     Creative Writing Coach
                   </p>
@@ -92,14 +92,14 @@ const LatestPosts = () => {
         <aside className="lg:w-2/5 flex flex-col gap-8">
           {/* Popular Categories */}
           <div className="bg-white rounded-lg p-6 shadow-md">
-            <h4 className="text-lg font-medium text-[#2E5A2E] mb-4">
+            <h4 className="text-lg font-medium text-primary mb-4">
               Popular Categories
             </h4>
             <ul className="space-y-3 text-gray-700 text-sm">
               {categories.map(({ name, count, icon }) => (
                 <li key={name} className="flex justify-between items-center">
                   <div className="flex items-center space-x-2">
-                    <div className="bg-[#98CF98] rounded-full p-2 flex items-center justify-center w-8 h-8">
+                    <div className="bg-secondary rounded-full p-2 flex items-center justify-center w-8 h-8">
                       <img src={icon} alt="" />
                     </div>
                     <span>{name}</span>
@@ -122,7 +122,7 @@ const LatestPosts = () => {
                 >
                   {/* Left side: avatar + info */}
                   <div className="flex items-center gap-4 flex-1 min-w-0">
-                    <div className="rounded-full bg-[#98CF98] p-3">
+                    <div className="rounded-full bg-secondary p-3">
                       <img
                         src={authors[1].avatar}
                         alt={authors[1].name}
@@ -130,7 +130,7 @@ const LatestPosts = () => {
                       />
                     </div>
                     <div className="flex flex-col truncate">
-                      <span className="text-[#2E5A2E] text-base truncate">
+                      <span className="text-primary text-base truncate">
                         {author.name}
                       </span>
                       <span className="text-[#4B5563] text-sm truncate">
@@ -154,7 +154,7 @@ const LatestPosts = () => {
 
       {/* Load More Button */}
       <div className="mt-10 flex justify-center">
-        <button className="bg-[#2E5A2E] hover:bg-green-800 text-white px-8 py-3 rounded-lg">
+        <button className="bg-primary hover:bg-green-800 text-white px-8 py-3 rounded-lg">
           Load More Posts
         </button>
       </div>

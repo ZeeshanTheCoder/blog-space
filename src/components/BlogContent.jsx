@@ -13,7 +13,7 @@ const BlogContent = () => {
 
       {/* Author */}
       <div className="flex items-center space-x-4">
-        <div className="w-12 h-12 bg-[#98CF98] rounded-full flex items-center justify-center text-green-800 text-xl">
+        <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-green-800 text-xl">
           <img
             src="/assets/icons/users-vector.png"
             className="filter invert"
@@ -94,7 +94,7 @@ const BlogContent = () => {
         </div>
         <div className="mt-8 flex flex-wrap justify-between items-center">
           <div className="flex flex-wrap gap-2">
-            <span className="bg-[#98CF98] text-[#374151] text-xs px-3 py-1 rounded-full">
+            <span className="bg-secondary text-[#374151] text-xs px-3 py-1 rounded-full">
               Storytelling
             </span>
             <span className="bg-[#F3F4F6] text-[#374151] text-xs px-3 py-1 rounded-full">

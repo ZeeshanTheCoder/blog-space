@@ -20,7 +20,7 @@ const RecentPostsCard = () => {
     <div className="bg-white rounded-xl shadow-md overflow-hidden flex flex-col h-full">
       {/* Header */}
       <div className="flex items-center justify-between px-6 py-4">
-        <h2 className="text-[#2E5A2E] text-lg font-medium">Recent Posts</h2>
+        <h2 className="text-primary text-lg font-medium">Recent Posts</h2>
         <HiOutlineDotsHorizontal className="text-gray-500 text-xl cursor-pointer" />
       </div>
 
@@ -46,7 +46,7 @@ const RecentPostsCard = () => {
 
           {/* Author with Icon */}
           <div className="flex items-center space-x-2">
-            <div className="bg-[#98CF98] rounded-full p-2 text-black">
+            <div className="bg-secondary rounded-full p-2 text-black">
               <img
                 src="/assets/icons/users-vector.png"
                 className="invert"
@@ -59,7 +59,7 @@ const RecentPostsCard = () => {
       ))}
 
       {/* View All Posts — pushed to bottom */}
-      <div className="bg-[#F9FAFB] text-[#98CF98] text-sm py-3 px-7 rounded-b-xl cursor-pointer hover:underline mt-auto">
+      <div className="bg-[#F9FAFB] text-secondary text-sm py-3 px-7 rounded-b-xl cursor-pointer hover:underline mt-auto">
         View All Posts
       </div>
     </div>

@@ -10,11 +10,11 @@ const CategoriesHeader = () => {
             Home
           </a>
           <span className="text-gray-400">{'>'}</span>
-          <span className="text-gray-600 text-[#2E5A2E]">Categories</span>
+          <span className="text-gray-600 text-primary">Categories</span>
         </div>
 
         {/* Title */}
-        <h1 className="mt-2 text-[#2E5A2E]  text-2xl sm:text-3xl">
+        <h1 className="mt-2 text-primary  text-2xl sm:text-3xl">
           Explore Categories
         </h1>
       </nav>

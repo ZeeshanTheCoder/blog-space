@@ -44,8 +44,8 @@ const CategoriesSearch = () => {
               onClick={() => setView('grid')}
               className={`p-2 rounded-md border ${
                 view === 'grid'
-                  ? 'bg-[#2E5A2E] text-white'
-                  : 'bg-white border-[#2E5A2E] text-[#2E5A2E]'
+                  ? 'bg-primary text-white'
+                  : 'bg-white border-primary text-primary'
               }`}
             >
               <FiGrid size={16} />
@@ -54,8 +54,8 @@ const CategoriesSearch = () => {
               onClick={() => setView('list')}
               className={`p-2 rounded-md border ${
                 view === 'list'
-                  ? 'bg-[#2E5A2E] text-white'
-                  : 'bg-white border-[#2E5A2E] text-[#2E5A2E]'
+                  ? 'bg-primary text-white'
+                  : 'bg-white border-primary text-primary'
               }`}
             >
               <FiList size={16} />

@@ -8,7 +8,7 @@ const CommentsSection = () => {
       {/* New Comment */}
       <div className="flex items-start gap-3 mb-4">
         <div className="flex">
-          <div className="w-12 h-12 bg-[#98CF98] rounded-full flex items-center justify-center text-green-800 text-xl font-semibold">
+          <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-green-800 text-xl font-semibold">
             <img
               src="/assets/icons/users-vector.png"
               className="filter invert"
@@ -23,14 +23,14 @@ const CommentsSection = () => {
         />
       </div>
       <div className="flex justify-end">
-        <button className="px-4 py-2 justify-end bg-[#2E5A2E] text-white rounded hover:bg-green-800 transition text-sm mb-6">
+        <button className="px-4 py-2 justify-end bg-primary text-white rounded hover:bg-green-800 transition text-sm mb-6">
           Post Comment
         </button>
       </div>
 
       {/* Existing Comments */}
       <div className="flex items-start gap-3 mb-4">
-        <div className="w-12 h-12 bg-[#98CF98] rounded-full flex items-center justify-center text-green-800 text-xl font-semibold">
+        <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-green-800 text-xl font-semibold">
           <img
             src="/assets/icons/users-vector.png"
             className="filter invert"
@@ -38,7 +38,7 @@ const CommentsSection = () => {
           />
         </div>
         <div className="flex flex-col bg-[#F9FAFB] px-5 py-4 w-full rounded-lg justify-start">
-          <span className="text-[#2E5A2E]">Sara Williams</span>
+          <span className="text-primary">Sara Williams</span>
           <p className="text-sm text-gray-700">
             This article was incredibly helpful! I loved the structure.
           </p>

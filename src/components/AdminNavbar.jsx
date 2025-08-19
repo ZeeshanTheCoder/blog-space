@@ -32,7 +32,7 @@ const AdminNavbar = ({ toggleSidebar }) => {
 
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-green-300 rounded-full flex items-center justify-center">
-            <FiUser className="text-[#2E5A2E]" />
+            <FiUser className="text-primary" />
           </div>
           <div className="hidden sm:block">
             <p className="text-sm font-semibold">Admin User</p>

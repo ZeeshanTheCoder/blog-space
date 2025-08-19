@@ -4,7 +4,7 @@ const AuthorNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-[#2E5A2E] px-6 py-3">
+    <nav className="bg-primary px-6 py-3">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Left side */}
         <div className="flex items-center space-x-10">
@@ -30,11 +30,11 @@ const AuthorNavbar = () => {
 
         {/* Right side */}
         <div className="flex items-center space-x-4">
-          <button className="flex bg-[#98CF98] text-[#2E5A2E] rounded px-5 gap-5 py-2 hover:bg-green-400 transition-colors duration-200">
+          <button className="flex bg-secondary text-primary rounded px-5 gap-5 py-2 hover:bg-green-400 transition-colors duration-200">
             <img src="assets/icons/add-vector.png" className="object-contain" alt="" />
             <span> New Post</span>
           </button>
-          <div className="p-3 bg-[#98CF98] rounded-full text-green-800 text-xl">
+          <div className="p-3 bg-secondary rounded-full text-green-800 text-xl">
             <img
               src="/assets/icons/users-vector.png"
               className="filter invert"
@@ -79,7 +79,7 @@ const AuthorNavbar = () => {
             </li>
           ))}
           <li>
-            <button className="w-full mt-2 bg-green-300 text-[#2E5A2E] rounded-full px-4 py-2 font-semibold hover:bg-green-400 transition-colors duration-200">
+            <button className="w-full mt-2 bg-green-300 text-primary rounded-full px-4 py-2 font-semibold hover:bg-green-400 transition-colors duration-200">
               + New Post
             </button>
           </li>

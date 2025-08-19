@@ -22,8 +22,8 @@ const iconMap = {
 
 const CategoryGrid = ({ categories }) => {
   return (
-    <div className="py-15 bg-[#F9FAFB]">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mx-25 gap-6 mx-4">
+    <div className=" bg-[#F9FAFB] p-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:mx-25 gap-6">
         {categories.map((category, index) => (
           <CategoryCard
             key={index}

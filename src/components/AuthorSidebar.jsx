@@ -4,7 +4,7 @@ const AuthorSidebar = () => {
       {/* Author Bio */}
       <div className="max-w-sm bg-white rounded-xl shadow-md p-6 space-y-4">
         <div className="flex items-center space-x-4">
-          <div className="w-12 h-12 bg-[#98CF98] rounded-full flex items-center justify-center text-green-800 text-xl font-semibold">
+          <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-green-800 text-xl font-semibold">
             <img
               src="/assets/icons/users-vector.png"
               className="filter invert"
@@ -12,7 +12,7 @@ const AuthorSidebar = () => {
             />
           </div>
           <div>
-            <h2 className="text-lg text-[#2E5A2E]">
+            <h2 className="text-lg text-primary">
               Emma Thompson
             </h2>
             <p className="text-sm text-gray-500">Creative Writing Coach</p>

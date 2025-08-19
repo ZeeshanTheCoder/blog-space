@@ -13,14 +13,14 @@ const AuthNavbar = () => {
     <nav className="w-full bg-white py-3 px-4 border-b border-gray-200">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="text-[#2E5A2E] text-[24px] leading-8 font-[pacifico]">
+        <div className="text-primary text-[24px] leading-8 font-[pacifico]">
           BlogSpace
         </div>
 
         {/* Back to Home link */}
         <Link
           to="/"
-          className="flex items-center text-[#2E5A2E] text-sm hover:underline"
+          className="flex items-center text-primary text-sm hover:underline"
         >
           <FaArrowLeft className="mr-2" />
           Back to Home

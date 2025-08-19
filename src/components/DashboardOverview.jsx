@@ -12,7 +12,7 @@ export default function DashboardOverview() {
     <section className="p-3 space-y-6">
       {/* Title and Subtitle */}
       <div>
-        <h2 className="text-[30px] text-[#2E5A2E] mb-1">Dashboard Overview</h2>
+        <h2 className="text-[30px] text-primary mb-1">Dashboard Overview</h2>
         <p className="text-green-700 text-sm">
           Monitor your blog&apos;s performance and manage content
         </p>
@@ -61,7 +61,7 @@ export default function DashboardOverview() {
               </p>
               <p className="text-[#16A34A] text-xs">{change}</p>
             </div>
-            <div className="bg-[#98CF98] rounded rounded-2xl p-3">
+            <div className="bg-secondary rounded rounded-2xl p-3">
               <img
                 src={icon}
                 className={`${invert ? "invert filter" : ""}`}
