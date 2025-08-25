@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -7,8 +8,7 @@ const HeroSection = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage:
-            "url('/assets/images/banner.jpg')", // Replace with your image
+          backgroundImage: "url('/assets/images/banner.jpg')", // Replace with your image
         }}
       ></div>
 
@@ -26,9 +26,11 @@ const HeroSection = () => {
                 publish, and discover amazing content that inspires and informs.
               </p>
               <div className="flex flex-row gap-4">
-                <button className="bg-secondary hover:bg-green-800 text-black px-6 py-2 rounded-md text-sm">
-                  Start Writing
-                </button>
+                <NavLink to="/write">
+                  <button className="bg-secondary hover:bg-green-800 text-black px-6 py-2 rounded-md text-sm">
+                    Start Writing
+                  </button>
+                </NavLink>
                 <button className="border border-white text-white bg-transparent hover:bg-green-50 hover:text-primary px-6 py-2 rounded-md text-sm">
                   Explore Posts
                 </button>
