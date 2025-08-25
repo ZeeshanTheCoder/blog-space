@@ -1,5 +1,6 @@
 import React from "react";
 import { FaRegEye } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const categories = [
   {
@@ -33,9 +34,7 @@ const LatestPosts = () => {
     <section className="bg-[#E6F4EC] min-h-screen py-10 px-4 sm:px-6 lg:px-20">
       {/* Heading */}
       <div className="max-w-5xl mx-auto mb-8">
-        <h2 className="text-3xl font-medium text-primary mb-2">
-          Latest Posts
-        </h2>
+        <h2 className="text-3xl font-medium text-primary mb-2">Latest Posts</h2>
         <p className="text-[#374151] text-base">
           Discover fresh perspectives and inspiring stories.
         </p>
@@ -45,11 +44,14 @@ const LatestPosts = () => {
       <div className="max-w-5xl mx-auto flex flex-col lg:flex-row gap-10">
         {/* Left Column - Blog Post Card */}
         <article className="bg-white rounded-lg shadow-md lg:w-3/5">
-          <img
-            src="assets/images/post-banner.jpg"
-            alt="The Art of Storytelling"
-            className="w-full rounded-t-lg object-cover h-[auto]"
-          />
+          <NavLink to="/blog-detail">
+            <img
+              src="assets/images/post-banner.jpg"
+              alt="The Art of Storytelling"
+              className="w-full rounded-t-lg object-cover h-[auto]"
+            />
+          </NavLink>
+
           <div className="p-6">
             <span className="inline-block bg-secondary text-primary text-xs px-3 py-1 rounded-full mb-3">
               Writing
@@ -57,9 +59,11 @@ const LatestPosts = () => {
             <span className="inline-block text-[#6B7280] text-xs px-3 py-1 rounded-full mb-3">
               March 9,
             </span>
-            <h3 className="text-xl text-primary font-medium mb-2">
-              The Art of Storytelling: Crafting Compelling Narratives
-            </h3>
+            <NavLink to="/blog-detail">
+              <h3 className="text-xl text-primary font-medium mb-2">
+                The Art of Storytelling: Crafting Compelling Narratives
+              </h3>
+            </NavLink>
             <p className="text-[#374151] text-sm mb-6 leading-relaxed line-clamp-2">
               Learn the fundamental storytelling skills that make stories
               memorable and engaging, from character development to plot
@@ -140,10 +144,7 @@ const LatestPosts = () => {
                   </div>
 
                   <div className="flex-shrink-0 p-2">
-                    <img
-                      src="assets/icons/add-user-icon.svg"
-                      alt="Add User"
-                    />
+                    <img src="assets/icons/add-user-icon.svg" alt="Add User" />
                   </div>
                 </li>
               ))}

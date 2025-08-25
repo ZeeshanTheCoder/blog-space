@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
 
 const AuthNavbar = () => {
@@ -13,10 +13,11 @@ const AuthNavbar = () => {
     <nav className="w-full bg-white py-3 px-4 border-b border-gray-200">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="text-primary text-[24px] leading-8 font-[pacifico]">
-          BlogSpace
-        </div>
-
+        <NavLink to="/">
+          <div className="text-primary text-[24px] leading-8 font-[pacifico]">
+            BlogSpace
+          </div>
+        </NavLink>
         {/* Back to Home link */}
         <Link
           to="/"

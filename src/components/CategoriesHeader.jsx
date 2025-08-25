@@ -10,7 +10,7 @@ const CategoriesHeader = () => {
             Home
           </a>
           <span className="text-gray-400">{'>'}</span>
-          <span className="text-gray-600 text-primary">Categories</span>
+          <span className="text-primary">Categories</span>
         </div>
 
         {/* Title */}

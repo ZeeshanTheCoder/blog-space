@@ -7,6 +7,8 @@ import Categories from "./pages/Categories";
 import AdminDashboard from "./pages/AdminDashboard";
 import BlogDetail from "./pages/BlogDetail";
 import AuthorDashboard from "./pages/AuthorDashboard";
+import FeaturedAuthors from "./pages/FeaturedAuthors";
+import Write from "./pages/Write";
 
 function App() {
   const router = createBrowserRouter([
@@ -21,6 +23,10 @@ function App() {
     {
       path: "/categories",
       element: <Categories />,
+    },
+    {
+      path: "/authors",
+      element: <FeaturedAuthors />,
     },
     {
       path: "/login",
@@ -41,6 +47,10 @@ function App() {
     {
       path: "/author-dashboard",
       element: <AuthorDashboard />,
+    },
+    {
+      path: "/write",
+      element: <Write />,
     },
     // {
     //   path: "*",

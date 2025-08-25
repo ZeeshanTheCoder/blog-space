@@ -29,7 +29,7 @@ const HeroSection = () => {
                 <button className="bg-secondary hover:bg-green-800 text-black px-6 py-2 rounded-md text-sm">
                   Start Writing
                 </button>
-                <button className="border border-white text-white bg-transparent hover:bg-green-50 px-6 py-2 rounded-md text-sm">
+                <button className="border border-white text-white bg-transparent hover:bg-green-50 hover:text-primary px-6 py-2 rounded-md text-sm">
                   Explore Posts
                 </button>
               </div>

@@ -61,7 +61,7 @@ export default function DashboardOverview() {
               </p>
               <p className="text-[#16A34A] text-xs">{change}</p>
             </div>
-            <div className="bg-secondary rounded rounded-2xl p-3">
+            <div className="bg-secondary rounded-3xl p-3">
               <img
                 src={icon}
                 className={`${invert ? "invert filter" : ""}`}

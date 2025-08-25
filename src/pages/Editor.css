@@ -1,0 +1,26 @@
+.ql-toolbar {
+  background-color: #f9fafb !important;
+  border-top-left-radius: 0.375rem; /* optional if you want to match rounded-md */
+  border-top-right-radius: 0.375rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0; /* Optional: You control spacing via .ql-formats */
+}
+
+.ql-editor {
+  min-height: 300px; /* or 400px or whatever you want */
+  font-size: 16px; /* optional: better readability */
+}
+
+/* Add space between groups */
+.ql-toolbar .ql-formats {
+  display: flex;
+}
+
+/* Add vertical line divider after each group, except last */
+.ql-toolbar .ql-formats:not(:last-child)::after {
+  content: "";
+  width: 1px;
+  background-color: #d1d5db; /* Tailwind's gray-300 */
+}

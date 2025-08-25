@@ -19,9 +19,7 @@ const AuthorContent = () => {
       <aside className="w-full md:w-64 bg-white p-4 border-r">
         {/* Quick Stats */}
         <div>
-          <h2 className="text-primary font-medium text-lg mb-4">
-            Quick Stats
-          </h2>
+          <h2 className="text-primary font-medium text-lg mb-4">Quick Stats</h2>
           <div className="space-y-3">
             {[
               {
@@ -147,12 +145,12 @@ const AuthorContent = () => {
         </div>
 
         {/* Blog Post Card */}
-        <div className="bg-white p-4 rounded-xl border border-[#E5E7EB] flex flex-col md:flex-row md:items-center">
+        <div className="bg-white p-4 rounded-xl border border-[#E5E7EB] flex flex-col lg:flex-row lg:items-start">
           {/* Image */}
           <img
             src="assets/images/blog-img.jpg"
             alt="Post"
-            className="w-16 h-16 rounded object-cover mr-4"
+            className="w-20 h-20 rounded object-cover mr-4"
           />
 
           {/* Content */}
@@ -161,7 +159,7 @@ const AuthorContent = () => {
               <h2 className="text-primary font-medium text-lg">
                 The Art of Storytelling: Crafting Compelling Narratives
               </h2>
-              <span className="text-xs bg-[#10B981] text-white px-3 py-1 rounded-full">
+              <span className="text-xs bg-[#10B981] text-white px-3 py-1 rounded-full mx-0 lg:mx-16">
                 Published
               </span>
             </div>
@@ -177,26 +175,23 @@ const AuthorContent = () => {
           </div>
 
           {/* Icons */}
-          <div className="space-x-3 mt-4 md:mt-0 md:ml-4">
+          <div className="space-x-5 mt-4 ms-0 md:mt-0 self-start">
             <button>
               <img
                 src="assets/icons/view-icon.svg"
                 alt="Delete"
-                className="text-black invert"
               />
             </button>
             <button>
               <img
                 src="assets/icons/edit-icon.svg"
                 alt="Delete"
-                className="text-black invert"
               />
             </button>
             <button>
               <img
                 src="assets/icons/delete-icon.svg"
                 alt="Delete"
-                className="text-black invert"
               />
             </button>
           </div>

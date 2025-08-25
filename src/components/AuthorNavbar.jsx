@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 const AuthorNavbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,12 +9,14 @@ const AuthorNavbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Left side */}
         <div className="flex items-center space-x-10">
-          <h1
-            className="text-white text-2xl font-pacifico cursor-pointer select-none"
-            style={{ fontFamily: "'Pacifico', cursive" }}
-          >
-            BlogSpace
-          </h1>
+          <NavLink to="/">
+            <h1
+              className="text-white text-2xl font-pacifico cursor-pointer select-none"
+              style={{ fontFamily: "'Pacifico', cursive" }}
+            >
+              BlogSpace
+            </h1>
+          </NavLink>
 
           {/* Desktop nav links */}
           <ul className="hidden md:flex space-x-8 text-white text-sm font-medium">
@@ -31,7 +34,11 @@ const AuthorNavbar = () => {
         {/* Right side */}
         <div className="flex items-center space-x-4">
           <button className="flex bg-secondary text-primary rounded px-5 gap-5 py-2 hover:bg-green-400 transition-colors duration-200">
-            <img src="assets/icons/add-vector.png" className="object-contain" alt="" />
+            <img
+              src="assets/icons/add-vector.png"
+              className="object-contain"
+              alt=""
+            />
             <span> New Post</span>
           </button>
           <div className="p-3 bg-secondary rounded-full text-green-800 text-xl">

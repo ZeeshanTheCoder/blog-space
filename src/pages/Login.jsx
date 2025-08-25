@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import AuthNavbar from "../components/AuthNavbar";
 import { FaEye, FaEyeSlash, FaGoogle, FaFacebook } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Login = () => {
-      const [showPassword, setShowPassword] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 
   return (
     <>
@@ -13,13 +14,17 @@ const Login = () => {
         <div className="bg-white rounded-lg shadow-md p-8 w-full max-w-md">
           {/* Email Field */}
           <div className="mb-4">
-            <label className="block text-sm text-[#374151] font-normal mb-1" htmlFor="email">
+            <label
+              className="block text-sm text-[#374151] font-normal mb-1"
+              htmlFor="email"
+            >
               Email Address
             </label>
             <input
               type="email"
               id="email"
               placeholder="Enter your email address"
+              required
               className="w-full px-4 py-2 border border-[#D1D5DB] rounded-md focus:outline-none focus:ring focus:ring-green-300"
             />
           </div>
@@ -58,9 +63,16 @@ const Login = () => {
           </div>
 
           {/* Sign In Button */}
-          <button className="w-full bg-primary text-white py-2 rounded-md hover:bg-green-800 transition">
-            Sign In
-          </button>
+          {/* <input type="submit" value={'Sign In'} className="w-full bg-primary text-white py-2 rounded-md hover:bg-green-800 transition" /> */}
+
+          <NavLink to="/admin">
+            <button
+              type="submit"
+              className="w-full bg-primary text-white py-2 rounded-md hover:bg-green-800 transition"
+            >
+              Sign In
+            </button>
+          </NavLink>
 
           {/* Divider */}
           <div className="flex items-center my-6">
@@ -84,9 +96,9 @@ const Login = () => {
           {/* Create Account Link */}
           <p className="text-center text-[#4B5563] text-sm">
             Don’t have an account?{" "}
-            <a href="#" className="text-secondary hover:underline">
+            <NavLink to="/signup" className="text-secondary hover:underline">
               Create Account
-            </a>
+            </NavLink>
           </p>
         </div>
       </div>
